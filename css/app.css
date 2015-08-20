@@ -9,8 +9,16 @@ html, body {
     margin: 0;
 }
 
-.side-panel, .content {
+.side-panel {
     padding: 15px;
+}
+
+.content > .skill {
+    padding: 15px;
+}
+
+.content > .skill:last-child {
+    margin-bottom: 60px;
 }
 
 .side-panel {
@@ -79,6 +87,41 @@ a {
 }
 
 
+.skills-bar, .skills-bar-spacer {
+    height: 60px;
+    transition: all 1s ease;
+}
+
+.skills-bar.filtering, .skills-bar-spacer.filtering {
+    height: 90px;
+}
+
+.skills-bar {
+    background-color: white;
+    padding: 5px 15px;
+    z-index: 99;
+    border-bottom: 1px solid white;
+}
+
+.skills-bar-spacer {
+    display: none;
+}
+
+body.has-docked-nav .skills-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-bottom: 1px solid grey;
+}
+
+body.has-docked-nav .skills-bar-spacer {
+    display: block;
+}
+
+.tag-filter {
+    display: block;
+    margin-left: 10px;
+}
 .tag-filter .tag {
     color: white;
 }
@@ -101,8 +144,12 @@ ul.contact {
 }
 
 .icon {
-    height: 24px;
-    width: auto;
-    vertical-align: middle;
+    color: white;
     display: inline-block;
+    font-size: 28px;
+    vertical-align: middle;
+}
+
+.icon.fa-envelope {
+    font-size: 24px;
 }

@@ -128,7 +128,6 @@ body.has-docked-nav .skills-bar-spacer {
 
 ul.contact {
     list-style-type: none;
-    margin-left: 165px;
 }
 
 .contact .icon {
@@ -141,6 +140,7 @@ ul.contact {
     width: 150px;
     height: 150px;
     border-radius: 100%;
+    border: 2px solid white;
 }
 
 .icon {
